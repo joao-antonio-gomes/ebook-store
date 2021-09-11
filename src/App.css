@@ -1,38 +1,197 @@
-.App {
-  text-align: center;
+.container {
+    width: 80%;
+    margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.content-books {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card-book {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card-book img {
+    width: 180px;
+    transition: all .3s linear;
 }
 
-.App-link {
-  color: #61dafb;
+.card-book:hover {
+    box-shadow: 12px 13px 23px -14px rgba(0,0,0,0.75);
+    transition: all .3s linear;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-book-title {
+    color: #333;
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.card-book-price {
+    color: #0b1a72;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card-book button {
+    border: none;
+    letter-spacing:1.5px;
+    background-color: #0b1a72;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 30px;
+    margin: 5px;
+    transition: all .3s linear;
+    cursor: pointer;
+}
+
+.card-book button:hover {
+    box-shadow: 4px 8px 17px -8px rgba(0,0,0,0.75);
+    transition: all .3s linear;
+}
+
+.nav {
+    padding:10px;
+    background-color: #0b1a72;
+    color: #fff;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.nav .container {
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info-carrinho {
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.qtd-produtos {
+    display: flex;
+    width: 110px;
+    justify-content: space-between;
+}
+
+.borda {
+    border-right: 1px solid #929292;
+
+}
+
+.book-container {
+    background-color: #fefefe;
+    display: flex;
+    gap: 15px;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+.book-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.book-description {
+    text-align: justify;
+    color: #696969;
+}
+
+.book-title {
+    font-size: 3.5rem;
+    color: #0b1a72;
+    font-weight: 600;
+}
+
+.book-price {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.book-info button {
+    margin-top: 1rem;
+    border: none;
+    letter-spacing: 1.5px;
+    background-color: #0b1a72;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 5px 30px;
+    transition: all .3s linear;
+    cursor: pointer;
+    align-self: center;
+}
+
+.book-info button:hover {
+    box-shadow: 4px 8px 17px -8px rgba(0,0,0,0.75);
+    transition: all .3s linear;
+}
+
+.table-cart {
+    width: 100%;
+    background: #FFF;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.table-cart thead, th {
+    color: #999;
+    text-align: left;
+    padding: 12px;
+}
+
+.table-cart tbody, th {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+.table-image {
+    height: 100px;
+}
+
+.table-total td {
+    font-weight: bold;
+    padding: 12px 0;
+}
+
+.table-total td:nth-child(1) {
+    padding-left: 12px;
+}
+
+.table-quantidade-item {
+    display: flex;
+    align-items: center;
+    height: 120px;
+    width: 110px;
+    justify-content: space-evenly;
+}
+
+.table-button-qtt {
+    cursor: pointer;
+    height: 15px !important;
+}
+
+.btn-vazio {
+    display: block;
+    width: 1em;
+}
+
+.remove-icon {
+    padding-left: 30px;
 }
